@@ -22,7 +22,7 @@ fi
 
 echo "Pre-push hooks passed"
 echo "Building app..."
-cd frontend-app && npm run build
+cd app && npm run build
 if [ $? -ne 0 ]; then
     echo "Build failed"
     exit 1
